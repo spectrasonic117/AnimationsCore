@@ -5,10 +5,7 @@ import co.aikar.commands.annotation.*;
 import lombok.RequiredArgsConstructor;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
-import net.kyori.adventure.title.Title;
 import org.bukkit.command.CommandSender;
-
-import java.time.Duration;
 
 @CommandAlias("animation|animations")
 @CommandPermission("animation.cmd")

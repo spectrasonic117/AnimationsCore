@@ -16,6 +16,7 @@ public final class Main extends JavaPlugin {
     private @Getter PaperCommandManager commandManager;
     private @Getter TaskChainFactory taskChainFactory;
 
+
     @Override
     public void onEnable() {
         instance = this;
@@ -44,6 +45,9 @@ public final class Main extends JavaPlugin {
     @Override
     public void onDisable() {
         MessageUtils.sendShutdownMessage(this);
+        if (this.commandManager != null) {
+            this.commandManager.unregisterCommands();
+        }
     }
 
     public static <T> TaskChain<T> newChain() {

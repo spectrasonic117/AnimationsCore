@@ -1,15 +1,10 @@
-# Basic plugin information
 name: AnimationCore
-version: '1.0.0'
+version: '${version}'
 main: com.spectrasonic.animationsCore.Main
 description: 'Advanced animation system for Minecraft servers'
-api-version: '1.21'
-
-# Plugin metadata
+api-version: '1.20'
 authors:
   - Spectrasonic
-website: 'https://spectrasonic.vercel.app'
-prefix: AnimationCore
 
 commands:
   animation:
@@ -17,12 +12,9 @@ commands:
     aliases:
       - animations
       - animationscore
-      - ac
-      - acore
     permission: animation.cmd
     usage: '/animation <numeric> <frames> <from> <until>'
 
-# Permissions
 permissions:
   animation.cmd:
     description: 'Allows usage of animation commands'
